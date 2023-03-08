@@ -38,8 +38,10 @@ chads2vasc_score = calculate_chads2vasc_score(
 )
 
 # Display results
-st.write(f"**CHA₂DS₂-VASc Score:** {chads2vasc_score}")
-st.write(f"**Risk of ischemic stroke:** {ischemic_stroke_risk_dict[chads2vasc_score]}%")
-st.write(
+st.success(f"**CHA₂DS₂-VASc Score:** {chads2vasc_score}")
+st.success(
+    f"**Risk of ischemic stroke:** {ischemic_stroke_risk_dict[chads2vasc_score]}%"
+)
+st.success(
     f"**Risk of stroke/TIA/systemic embolism:** {stroke_tia_se_risk_dict[chads2vasc_score]}%"
 )
